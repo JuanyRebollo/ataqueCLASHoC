@@ -78,7 +78,7 @@ def recuperar():
                     print(f"ejercito {cont+1}",ejercito)
                     cont+=1
                 opcion=int( input(f"ELIJA EJERCITO entre [1] a [{cont}]\n>>> "))
-                if opcion>0 and opcion < len(listas):    
+                if opcion>0 and opcion <= len(listas):    
                     return listas[opcion-1]
                 else:
                     print("ERROR... volviendo al principio...")
@@ -186,6 +186,10 @@ if __name__=='__main__':
         time.sleep(30)
         terminar()
         time.sleep(6)
+        volver1=710
+        volver2=615
+        
+        click_escalado(volver1,volver2)
         buscar()
         time.sleep(5)
         
